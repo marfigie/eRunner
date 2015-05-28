@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="jpwp.project.pg.erunner.Hud"
+    android:background="#3A3C4F">
+
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </FrameLayout>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGoToMainMenuFromHud"
+            android:layout_gravity="right|top"
+            android:clickable="true"
+            android:src="@drawable/res_hud_quitbutton"
+            android:background="@android:color/transparent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_route_name_label_hud"
+        android:id="@+id/textView4"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:layout_gravity="left|bottom"
+        android:layout_alignTop="@+id/textRouteName"
+        android:paddingRight="8dp"
+        android:alpha="0.7"
+        android:layout_marginBottom="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Medium Text"
+        android:id="@+id/textRouteName"
+        android:background="#ff000000"
+        android:textColor="#ffffffff"
+        android:alpha="0.7"
+        android:layout_gravity="left|bottom"
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Czas:"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:alpha="0.7"
+        android:id="@+id/labelTime"
+        android:layout_marginBottom="78dp"
+        android:layout_gravity="bottom|left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Timer"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:alpha="0.7"
+        android:id="@+id/textTimer"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="52dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/labelSpeedTxt"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:alpha="0.7"
+        android:id="@+id/labelSpeed"
+        android:layout_marginBottom="78dp"
+        android:layout_gravity="bottom|right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Speed"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:alpha="0.7"
+        android:id="@+id/textSpeed"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="52dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/routeLengthTxt"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:alpha="0.7"
+        android:id="@+id/labelRouteLength"
+        android:layout_marginBottom="26dp"
+        android:layout_gravity="bottom|right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Route Lenght"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:alpha="0.7"
+        android:id="@+id/textRouteLength"
+        android:layout_gravity="bottom|right" />
+
+   <!-- For debug and future development purposes:
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="bearing"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:alpha="0.7"
+        android:id="@+id/textbearing"
+        android:layout_gravity="center|right" />
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="compass"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:alpha="0.7"
+        android:id="@+id/textcompass"
+        android:layout_gravity="center|right"
+        android:layout_marginBottom="26dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgDirectionPointer"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/res_directionpointer"
+        android:layout_margin="4dp" />-->
+
+</FrameLayout>
+

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#2f3140">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="250dp" android:id="@+id/map" tools:context=".RouteDesigner"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_weight="0.41"
+    android:clickable="true"
+    android:layout_below="@+id/editTextField"
+    android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout"
+        android:layout_below="@+id/map"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp">
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="30dp"
+            android:text="@string/ButtonZapiszTraseButton"
+            android:id="@+id/btnCreateRoute"
+            android:textColor="#7d968d"
+            android:background="#2f3140"
+            android:layout_below="@+id/map"
+            android:layout_alignLeft="@+id/map"
+            android:layout_alignStart="@+id/map"
+            android:clickable="true"
+            android:elegantTextHeight="true"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="30dp"
+            android:text="@string/TextButtonPowrotStworzTrase"
+            android:id="@+id/btnGoToRoutesMenuFromRouteDesigner"
+            android:textColor="#7d968d"
+            android:background="#2f3140"
+            android:layout_below="@+id/map"
+            android:layout_alignRight="@+id/map"
+            android:layout_alignEnd="@+id/map"
+            android:clickable="true"
+            android:elegantTextHeight="true"
+            android:layout_row="0"
+            android:layout_column="1" />
+    </GridLayout>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextField"
+        android:autoText="true"
+        android:textColor="#7d968d"
+        android:editable="false"
+        android:text="@string/enterRouteNameTxt"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/gridLayout"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/route_name_label_route_designer"
+        android:id="@+id/textView3"
+        android:paddingTop="6dp"
+        android:textColor="#7d968d"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editTextField"
+        android:layout_toStartOf="@+id/editTextField" />
+</RelativeLayout>

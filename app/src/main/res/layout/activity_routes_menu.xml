@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="jpwp.project.pg.erunner.RoutesMenu"
+    android:background="#3A3C4F">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/RoutesMenuTextLabel"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#7d968d" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RoutesList"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/btnGoToRouteDesigner"
+        android:layout_toStartOf="@+id/btnGoToRouteDesigner"
+        android:layout_marginRight="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAddRouteRoutesMenu"
+        android:id="@+id/btnGoToRouteDesigner"
+        android:layout_marginTop="59dp"
+        android:layout_alignTop="@+id/RoutesList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#2f3140"
+        android:padding="12dp"
+        android:textColor="#7d968d" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDeleteRouteRoutesMenu"
+        android:id="@+id/btnDeleteRoute"
+        android:layout_below="@+id/btnGoToRouteDesigner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/RoutesList"
+        android:layout_toEndOf="@+id/RoutesList"
+        android:background="#2f3140"
+        android:padding="12dp"
+        android:textColor="#7d968d" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnBackRoutesMenu"
+        android:id="@+id/btnGoToMainMenuFromRoutesMenu"
+        android:layout_marginTop="20dp"
+        android:background="#2f3140"
+        android:padding="12dp"
+        android:textColor="#7d968d"
+        android:layout_below="@+id/btnDeleteRoute"
+        android:layout_alignRight="@+id/btnDeleteRoute"
+        android:layout_alignEnd="@+id/btnDeleteRoute"
+        android:layout_alignLeft="@+id/btnDeleteRoute"
+        android:layout_alignStart="@+id/btnDeleteRoute" />
+
+</RelativeLayout>

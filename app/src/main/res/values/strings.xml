@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eRunner</string>
+    <string name="title_activity_route_designer">eRunner - Route Designer</string>
+    <string name="title_activity_main_menu">eRunner</string>
+    <string name="action_settings">Settings</string>
+    <string name="StworzTraseTitle">Kreator Trasy:</string>
+    <string name="ButtonZapiszTraseButton">Stwórz Trasę</string>
+    <string name="TextButtonPowrotStworzTrase">Powrót</string>
+    <string name="btnMainMenuStartRun">Rozpocznij Bieg</string>
+    <string name="btnMainMenuEditRoutes">Trasy</string>
+    <string name="btnMainMenuQuitApp">Wyjdz</string>
+    <string name="title_activity_routes_menu">RoutesMenu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="RoutesMenuTextLabel">Lista tras:</string>
+    <string name="btnAddRouteRoutesMenu">Dodaj Trasę</string>
+    <string name="btnDeleteRouteRoutesMenu">Usun Trasę</string>
+    <string name="btnBackRoutesMenu">Powrót</string>
+    <string name="title_activity_hud">Hud</string>
+    <string name="route_name_label_route_designer">Nazwa Trasy: </string>
+    <string name="text_route_name_label_hud">Nazwa Trasy:</string>
+    <string name="routeLengthTxt">Dlugosc Trasy:</string>
+    <string name="labelSpeedTxt">Predkosc:</string>
+    <string name="enterRouteNameTxt">Wpisz Nazwę Trasy</string>
+
+</resources>
